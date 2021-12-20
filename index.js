@@ -6,7 +6,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 const app = express();
 // const port = 5000;
-const port = Process.env.PORT || 5000
+const port = process.env.PORT || 5000
 
 const uri = "mongodb+srv://dbUser:RAFJo96OGXCDyjYc@cluster0.baet0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
